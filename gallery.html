@@ -31,6 +31,66 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .tabbed-tables-container {
+      width: 80%;
+      margin: 30px auto;
+      overflow-x: scroll;
+    }
+    .tabs {
+      display: flex;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    .tabs div {
+      padding: 10px;
+      background-color: #f1f1f1;
+      margin-right: 5px;
+      border-radius: 5px;
+      text-align: center;
+      flex: 1;
+    }
+    .tabs .active {
+      background-color: #009879;
+      color: white;
+    }
+    .table-container {
+      display: none;
+    }
+    .table-container.active {
+      display: block;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 25px 0;
+      font-size: 12px;
+      text-align: left;
+    }
+    th, td {
+      padding: 12px 15px;
+    }
+    thead tr {
+      background-color: #009879;
+      color: #ffffff;
+      text-align: left;
+      font-weight: bold;
+    }
+    tbody tr {
+      border-bottom: 1px solid #dddddd;
+    }
+    tbody tr:nth-of-type(even) {
+      background-color: #f3f3f3;
+    }
+    tbody tr:last-of-type {
+      border-bottom: 2px solid #009879;
+    }
+  </style>
+
 </head>
 
 <body class="sub_page">
@@ -127,179 +187,640 @@
 
   <!-- about section -->
 
-  <section class="about_section layout_padding"> 
-    <div class="container">
-        <h2 class="text-center mb-4">Completed Projects</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="gallery-item">
-                    <img src="images/c1.jpg" alt="Image 1" class="img-fluid">
-                    <div class="caption">
-                        <h5>SAHARA - 6 TOWER</h5>
-                        <p>11 MILLION AED (ELECTRICAL ONLY)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="gallery-item">
-                    <img src="images/c2.jpg" alt="Image 2" class="img-fluid">
-                    <div class="caption">
-                        <h5>FUTURE TOWER - 3</h5>
-                        <p>7 MILLION AED (ELECTRICAL ONLY)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="gallery-item">
-                    <img src="images/c3.jpg" alt="Image 3" class="img-fluid">
-                    <div class="caption">
-                        <h5>FUTURE TOWER - 4</h5>
-                        <p>7.8 MILLION AED (ELECTRICAL ONLY)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="gallery-item">
-                    <img src="images/c4.png" alt="Image 1" class="img-fluid">
-                    <div class="caption">
-                        <h5>HOLIDAY INN & KINGSTON RESIDENCES</h5>
-                        <p>11 MILLION AED (ELECTRICAL ONLY)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="gallery-item">
-                    <img src="images/c5.jpg" alt="Image 2" class="img-fluid">
-                    <div class="caption">
-                        <h5>SUNSET TOWER</h5>
-                        <p>8.9 MILLION AED</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="gallery-item">
-                    <img src="images/c6.png" alt="Image 3" class="img-fluid">
-                    <div class="caption">
-                        <h5>AL BADAYER DESERT CAMP</h5>
-                        <p>9.8 MILLION AED (ELECTRICAL & PLUMBING)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="gallery-item">
-                    <img src="images/c7.png" alt="Image 1" class="img-fluid">
-                    <div class="caption">
-                        <h5>AL MONTAZAH PARK / AL JAZEERA PARK (WATER & GREEN PARK)</h5>
-                        <p>12.5 MILLION AED (ELECTRICAL & PLUMBING)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="gallery-item">
-                    <img src="images/c8.png" alt="Image 2" class="img-fluid">
-                    <div class="caption">
-                        <h5>GEEPAS TOWER</h5>
-                        <p>68 MILLION AED (FULL MEP)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="gallery-item">
-                    <img src="images/c9.png" alt="Image 3" class="img-fluid">
-                    <div class="caption">
-                        <h5>KINGSTON TOWER</h5>
-                        <p>12 MILLION AED (ELECTRICAL & PLUMBING ONLY)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="gallery-item">
-                    <img src="images/c10.png" alt="Image 1" class="img-fluid">
-                    <div class="caption">
-                        <h5>YASMEEN TOWER</h5>
-                        <p>28.5 MILLION AED (ELECTRICAL ONLY)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="gallery-item">
-                    <img src="images/c11.png" alt="Image 2" class="img-fluid">
-                    <div class="caption">
-                        <h5>CITY TOWERS AJMAN</h5>
-                        <p>25 MILLION AED (ELECTRICAL ONLY)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="gallery-item">
-                    <img src="images/c12.jpg" alt="Image 3" class="img-fluid">
-                    <div class="caption">
-                        <h5>SAHARA 5 TOWER</h5>
-                        <p>7 MILLION AED (ELECTRICAL ONLY)</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="gallery-item">
-                    <img src="images/c13.jpg" alt="Image 1" class="img-fluid">
-                    <div class="caption">
-                        <h5>SAHARA 4 TOWER</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="gallery-item">
-                    <img src="images/c14.jpg" alt="Image 2" class="img-fluid">
-                    <div class="caption">
-                        <h5>SUNSHINE TOWER</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="tabbed-tables-container">
+    <div class="tabs">
+      <div class="tab active" data-target="table1">Sharjah</div>
+      <div class="tab" data-target="table2">Dubai</div>
+      <div class="tab" data-target="table3">Ajman</div>
     </div>
-</section>
-
-<section class="new_section layout_padding"> 
-        <div class="container">
-            <h2 class="text-center mb-4">On Going Projects</h2> 
-            <div class="row">
-                <div class="col-md-12 text-center"> 
-                    <img src="images/ongoing.png" alt="New Section Image" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-
-<style>
-    .gallery-item {
-        position: relative;
-        margin-bottom: 30px;
-    }
-
-    .gallery-item .caption {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
-        color: white;
-        padding: 10px;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-
-    .gallery-item:hover .caption {
-        opacity: 1;
-    }
-</style>
+  
+    <div class="table-container active" id="table1">
+      <table>
+        <thead>
+          <tr>
+            <th>Status</th>
+            <th>Details</th>
+            <th>Location</th>
+            <th>Owner</th>
+            <th>Main Contractor</th>
+            <th>Consultant</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>COMPLETED</td>
+            <td>"AL JAWHARA TOWER (B+G+MEZZ+6P+26) + (SERVICES FLOORS + RESIDENTIAL APARTMENTS) HEALTH CLUB (SERVICE FLOOR + POOL) + HELIPAD"</td>
+            <td>"PLOT 578 T AL MAJAZ SHARJAH, UAE"</td>
+            <td>Mr. MOHAMED SULTAN AL OWAIS & PARTNERS</td>
+            <td>M/s OMIS CONTRACTING BLDG. & MAINT. CO. L.L.C.</td>
+            <td>M/s KHATIB & ALAMI (CONSOLIDATED ENGINEERING CO.)</td>
+          </tr>
+          <tr>
+            <td>COMPLETED</td>
+            <td>"TWIN TOWER (TOWER A + TOWER B) G + 3P + 20 TYP. + PH + HC"</td>
+            <td>"PLOT NO. P661 AL KHAN SHARJAH, UAE"</td>
+            <td>SHK. KHALID BIN HAMAD AL THANI</td>
+            <td>M/s SUN ENGG & CONT.</td>
+            <td>M/s ADNAN SAFFARINI</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>THURIAH TOWER RESIDENTIAL & COMMERCIAL BLDG. (GR.+8P+25R+1SER.)</td>
+            <td>"PLOT. NO. 650/T AL KHAN SHARJAH, UAE"</td>
+            <td>SHEIKH MAJID BIN HAMAD AL QASIMI</td>
+            <td>M/s AL THURIAH BUILDING CONTRACTING LLC</td>
+            <td>M/s HORIZON INTERNATIONAL CONSULTING ENGINEERS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>PROPOSED BUILDING (G+7)</td>
+            <td>"PLOT NO.537 AL MAJAZ, SHARJAH, UAE"</td>
+            <td>SHK. ABDULLA BIN SALEM BIN SULTAN AL QASIMI</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>RESIDENTIAL BUILDING (G + 1P + 5)</td>
+            <td>"PLOT NO. 19/696 MUWAILAH SHARJAH, UAE"</td>
+            <td>M/s. TATWEER REAL ESTATE</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s AL NAHDA ENGINEERING CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>MUTAWA VILLA (G+1 VILLA)</td>
+            <td>"PLOT NO. 616 & 618 JARINA SHARJAH, UAE"</td>
+            <td>Mr. SAEED JUMA AL MUTAWA</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s AL NAHDA ENGINEERING CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>RESIDENTIAL BUILDING (G + 6)</td>
+            <td>"PLOT NO 243 AL GHUWAIR SHARJAH, UAE"</td>
+            <td>Mr. ABDUL KAREEM MUBARAK RASASI</td>
+            <td>M/s AL DEIRA ENGINEERING CONSULTANTS COMPANY</td>
+            <td>M/s GHAZI AWAD CONSULTANT ENGINEER</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>BANK OF SHARJAH (G+2P+7 TYP)</td>
+            <td>"PLOT 1357-M AL KHAN SHARJAH, UAE"</td>
+            <td>SHEIKH MAJID BIN HAMAD AL QASIMI</td>
+            <td>M/s AL THURIAH BUILDING CONTRACTING LLC</td>
+            <td>M/s AL NAHDA ENGINEERING CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>SHEDS (G+MEZZ - 22 NOS)</td>
+            <td>"PLOT NO 689/B/222//M INDUSTRIAL AREA 3 SHARJAH, UAE"</td>
+            <td>SHEIKH MAJID BIN HAMAD AL QASIMI</td>
+            <td>M/s AL THURIAH BUILDING CONTRACTING LLC</td>
+            <td>M/s AL NAHDA ENGINEERING CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>SHARJAH FOOTBALL CLUB, SHARJAH FOOTBALL STADIUM (GOV)</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>SHARJAH GOV</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>AREF VILLA (G+1 VILLA)</td>
+            <td>"PLOT NO110/94 RAMLA SHARJAH, UAE"</td>
+            <td>Mr. AREF MOHAMMAD HASAN AL SHARIEF</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s RASHID AL OWAIS ENGINEERING CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>NESTO HYPERMARKET (G+2+3 STOREY PARKING)</td>
+            <td>"PLOT NO. 855-494 BUTINA SHARJAH, UAE"</td>
+            <td>SHEIKHA ALYA BINT MOHAD AL QASMI</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s QHC ARCHITECTS & ENGINEERS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>TWIN VILLA (G+1)</td>
+            <td>"PLOT NO. AL KHAN SHARJAH, UAE"</td>
+            <td>DR. AZHARI</td>
+            <td>NILL</td>
+            <td>NILL</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>AL AZRA SCHOOL (G+1)</td>
+            <td>"PLOT NO. AL AZRA SHARJAH, UAE"</td>
+            <td>Mr. OMRAN MATAR MOHAMED TARYAM</td>
+            <td>THREE STAR BUILDING CONTRACTOR</td>
+            <td>M/s GECECO GULF & EMIRATES CONSULTING ENGINEERS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>AL NOUF SCHOOL</td>
+            <td>"PLOT NO. AL NOUF SHARJAH, UAE"</td>
+            <td>MINISTRY OF PUBLIC WORKS & HOUSING- FUJAIRAH</td>
+            <td>M/s ALI MOUSA & SONS CONTRACTING</td>
+            <td>M/s URBANISM PLANNING ARCHITECTURE CONSULTANCY LLC</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>NATIONAL FOOD DISTRIBUTION CENTER - WARE HOUSE (G+M+OFFICE, SHOWROOM & ACCOMODATION)</td>
+            <td>"PLOT NO 389-12/2609 INDUSTRIAL AREA 15 SHARJAH, UAE"</td>
+            <td>Mr. FARAJ ALI BIN HAMOUDAH</td>
+            <td>M/s AL HAMAD CONTRACTING COMPANY</td>
+            <td>M/s STEPS ENGINEERING CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>PROPOSED SHED GROUND ONLY & RESIDENTIAL BUILDING (G+3 TYPICAL)</td>
+            <td>"PLOT NO 1920 INDUSTRIAL -3 SHARJAH, UAE"</td>
+            <td>Mr. MOHAMED ABDULLA LATIF AL MULLA</td>
+            <td>M/s MAHMOUD NABOULSI & CO. CONTRACTING LLC (NCC)</td>
+            <td>ADNAN SAFFARINI ENGINEERING</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>SAHARA-5 (G+5P+15 TYP +HELIPAD)</td>
+            <td>"PLOT NO 546-A -645-A AL NAHDA SHARJAH, UAE"</td>
+            <td>SHEIKH MAJID BIN HAMAD AL QASIMI</td>
+            <td>M/s AL THURIAH BUILDING CONTRACTING LLC</td>
+            <td>M/s CONSULTAIR MEP ENGINEERS & CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>SAHARA-4 (G+6P+27 TYP +HELIPAD)</td>
+            <td>"PLOT NO 560-A AL NAHDA SHARJAH, UAE"</td>
+            <td>SHEIKH MAJID BIN HAMAD AL QASIMI</td>
+            <td>M/s AL THURIAH BUILDING CONTRACTING LLC</td>
+            <td>M/s CONSULTAIR MEP ENGINEERS & CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>AZRA SCHOOL -2 (B+G+1 SCHOOL)</td>
+            <td>"PLOT NO. 564-969 AL AZRA SHARJAH, UAE"</td>
+            <td>Mr. ALI NASSER ALI FERDAN</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s AL NAHDA ENGINEERING CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>AJMAN CITY TOWER COMPLEX (9 BUILDING - BLOCK – A, B & C) (GROUND FLOOR + 4 PARK + 20 TYPICAL FLOORS)</td>
+            <td>"PLOT NO. 166-180/1-168-150/1-168/1 AL NIEMIYA AJMAN, UAE"</td>
+            <td>H.H SHEIKH HUMAID BIN RASHID AL NUAIMI</td>
+            <td>M/s GULF ASIA CONTRACTING CO. LLC</td>
+            <td>M/s CANADIAN ENGINEERING CONSULTANT</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>SHARJAH ISLAMIC BANK (G+3 BUILDING)</td>
+            <td>"PLOT NO 146 AL MUWAILEH SHARJAH, UAE"</td>
+            <td>M/s SHARJAH ISLAMIC BANK</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s MAZAYA CONSULTING ENGINEERS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>ZUHOOR SCHOOL (G + 1)</td>
+            <td>"PLOT NO. 561 AL MUWAILEH SHARJAH, UAE"</td>
+            <td>Mr. MOHAMMAD ABDUL GAFFAR ABDULLAH</td>
+            <td>M/s MAHMOUD NABOULSI & CO. CONTRACTING LLC (NCC)</td>
+            <td>M/s ENG. ADNAN SAFFARINI OFFICE (ARCHITECTS & ENGINEERING CONSULTANTS)</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>NOOR ISLAND</td>
+            <td>"PLOT NO. 122/C PROJECT CODE W-089 SHARJAH CORNICHE AL MAJAZ 1 SHARJAH, UAE"</td>
+            <td>M/s SHARJAH INVESTMENT AND DEVELOPMENT AUTHORITY, SHUROOQ</td>
+            <td>M/s SHARJAH INVESTMENT AND DEVELOPMENT AUTHORITY, SHUROOQ</td>
+            <td>M/s SHARJAH INVESTMENT AND DEVELOPMENT AUTHORITY, SHUROOQ</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>AL MONTAZAH PARK, SHARJAH</td>
+            <td>"N/A"</td>
+            <td>M/s SHARJAH INVESTMENT & DEVELOPMENT AUTHORITY, SHUROOQ</td>
+            <td>M/s SARRAJ AL OWAIS ENGINEERING</td>
+            <td>M/s RASHID AL OWAIS ENGINEERING CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>QASBA SOUVENIR SHOP</td>
+            <td>"SHARJAH, UAE"</td>
+            <td>M/s SHARJAH INVESTMENT & DEVELOPMENT AUTHORITY, SHUROOQ</td>
+            <td>M/s ALBA TOWER ALUMINIUM FACTORY</td>
+            <td>N/A</td>
+        </tr>      
+        <tr>
+          <td>COMPLETED</td>
+          <td>MARWAN VILLA</td>
+          <td>AT PLOT NO 139 AL JURAINA SHARJAH UAE</td>
+          <td>Mr. MARWAN JASSIM AL SARKAL</td>
+          <td>N/A</td>
+          <td>M/s RASHID AL OWAIS ENGINEERING CONSULTANTS</td>
+      </tr>
+      <tr>
+          <td>COMPLETED</td>
+          <td>FUTURE TOWER-3 (G+5P+25 TYPICAL)</td>
+          <td>AT PLOT NO 1243/A AL KHAN SHARJAH, UAE</td>
+          <td>SHEIKH MAJID BIN HAMAD AL QASIMI</td>
+          <td>M/s AL THURIAH BUILDING CONTRACTING LLC</td>
+          <td>M/s CONSULTAIR MEP ENGINEERS & CONSULTANTS</td>
+      </tr>
+      <tr>
+          <td>COMPLETED</td>
+          <td>RE-FURBISHMENT OF AL-THURIAH HEAD OFFICE AT 5TH FLOOR - SAHARA TOWER - 1</td>
+          <td>PLOT NO.128 AL NAHDA STREET SHARJAH, UAE</td>
+          <td>M/s AL THURIAH BUILDING CONTRACTING LLC</td>
+          <td>M/s AL THURIAH BUILDING CONTRACTING LLC</td>
+          <td>M/s AL THURIAH BUILDING CONTRACTING LLC</td>
+      </tr>        
+        </tbody>
+      </table>
+    </div>
+  
+    <div class="table-container" id="table2">
+      <table>
+        <thead>
+          <tr>
+            <th>Status</th>
+            <th>Details</th>
+            <th>Location</th>
+            <th>Owner</th>
+            <th>Main Contractor</th>
+            <th>Consultant</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>COMPLETED</td>
+            <td>OASIS RESIDENCE</td>
+            <td>N/A</td>
+            <td>Mr. MARWAN FARAJ ALI BIN HAMOODA ALDHAHERI</td>
+            <td>N/A</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>COMMERCIAL & RESIDENTIAL BLDG. (B + G + 7)</td>
+            <td>PLOT NO. ICP1CBDC01 & ICP1CBDC02 NAD AL SHIBA INTL. CITY, PHASE 1 DUBAI, UAE</td>
+            <td>Mr. PARMANAND JETHANAND</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s CHAWLA ARCHITECTURAL & CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>COMM/OFFICES BLDG (DUBAI SILICON OASIS) (2B+G+9 TYP)</td>
+            <td>PLOT NO. 26-061 AT NAD AL SHIBBA DUBAI, UAE</td>
+            <td>DUBAI SILICON OASIS</td>
+            <td>M/s SUN & SAND BUILDING CONT LLC.</td>
+            <td>M/s MODEL ENGINEERING CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>INDIGO VILLAS - 40 VILLAS (G+2)</td>
+            <td>PLOT NO. JVC 14S 004 JUMEIRAH VILLAGE CIRCLE DUBAI, UAE</td>
+            <td>M/s VENUS PROPERTIES INVESTMENT LTD</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s OMAR MOUJAES ARCHITECT</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>FOOD COURT JABALI ALI</td>
+            <td>PLOT NO. JABAL ALI DUBAI, UAE</td>
+            <td>M/s AL MUHAIRI & ADI CONTRACT LLC</td>
+            <td>Khadim Jan Job</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>VILLA G+1 VILLA - 2 NO. GROUND VILLA - 1 NO.</td>
+            <td>ON PLOT # 281-1106 AL KHAWANEEJ FIRST DUBAI, UAE</td>
+            <td>FATIMA JUMA EID & SHEIKHA SAIF HARIB MOHD ABDULLAH</td>
+            <td>M/s MUSALLAS BLDG. CONT. CO.</td>
+            <td>M/s ARCHDOME CONSULTING ENGINEERS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>VILLA (G+1 VILLA 2 NOS)</td>
+            <td>PLOT NO. RO-071 & RO-070 DUBAI LAND DUBAI, UAE</td>
+            <td>Mr. NAGDEVE VILLA</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>VILLA (G+1 VILLA)</td>
+            <td>PLOT NO RL 058 DUBAI LAND DUBAI, UAE</td>
+            <td>Mr. JITINDER SURI</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s CHAWLA ARCHITECTURAL & CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>VILLA (G+1 VILLA)</td>
+            <td>PLOT NO. DUBAI LAND DUBAI, UAE</td>
+            <td>Mr. REJI GEORGE JOHN / Mr. TEJAL JOHNA</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s SEMAC CONSULTANTS ARCHITECTS, ENGINEERS & PLANNERS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>VILLA (G+1 VILLA)</td>
+            <td>PLOT NO.2440396 MUHAISNAH 3RD DUBAI, UAE</td>
+            <td>Mr. ABDUL QADEER</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s HI CORNER CONSULTANTS ARCHITECTS AND ENGINEERS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>VILLA (G+1 VILLA)</td>
+            <td>PLOT NO.2440453 MUHAISNAH 3RD DUBAI, UAE</td>
+            <td>Mr. ABDUL QADEER</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s HI CORNER CONSULTANTS ARCHITECTS AND ENGINEERS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>SCHOOL (B+G+1 KG SCHOOL)</td>
+            <td>PLOT NO. 6824196 AL HEBIAH FOURTH DUBAI, UAE</td>
+            <td>Mr. DINESH CHANDRA KOTHARI</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>SARAYA ENGINEERING</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>STORE & OFFICE (PRODUCTION, STORAGE & G+M OFFICE)</td>
+            <td>PLOT NO. 531-487 DUBAI INDUSTRIAL CITY DUBAI, UAE</td>
+            <td>M/s ABDUL MUEM AL RASHED FOOD STUFF EST.</td>
+            <td>LOYAL BUILDING CONT.</td>
+            <td>M/s CHAWLA ARCHITECTURAL & CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>VILLA (G+1 VILLA)</td>
+            <td>PLOT NO. R O - 119 DUBAI LAND DUBAI, UAE</td>
+            <td>Mr. RANA FARHAN</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s HI CORNER CONSULTANTS ARCHITECTS AND ENGINEERS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>VILLA (G+1 VILLA)</td>
+            <td>PLOT NO. R O - 022 DUBAI LAND DUBAI, UAE</td>
+            <td>Mr. RANA FARHAN</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s HI CORNER CONSULTANTS ARCHITECTS AND ENGINEERS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>VILLA (G+1 VILLA)</td>
+            <td>PLOT NO. R D - 178 DUBAI LAND DUBAI, UAE</td>
+            <td>Mr. HARISH KATHORIA</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s LEYAN ENGINEERING CONSULTANCY</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>VILLA - 6 NOS</td>
+            <td>PLOT NO 251-0164 MIRDIF DUBAI, UAE</td>
+            <td>Mr. MOHD OMAR MOHD AL JABERI</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s ADT ARCHITECTURAL ENGINEERING CONSULTANCY</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>VILLA (G+1)</td>
+            <td>PLOT NO.R G 041 DUBAI LAND DUBAI, UAE</td>
+            <td>Mr. HARISH HEMANDAS</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s SEMAC CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>COM. OFFICE & RESIDENTIAL BLDGS (G+M+2 TYP.)</td>
+            <td>PLOT NO.128-801 KHABAISI DUBAI, UAE</td>
+            <td>SULTAN KHALIFA AL HABTOOR</td>
+            <td>GOLDEN WING CONTRACTING</td>
+            <td>M/s NEXT ENGINEERING CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>B+G+6+GYM BLDG</td>
+            <td>PLOT NO. 421-305 AL WARQA DUBAI, UAE</td>
+            <td>AYMAN EZZAT HELMI SALEH AKILA</td>
+            <td>M/s GULF ASIA CONTRACTING LLC</td>
+            <td>M/s CANADIAN ENGINEERING CONSULTANT</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>G+1 VILLA (DUBAI LAND)</td>
+            <td>PLOT NO. RL-056 (8884324) DUBAI, UAE</td>
+            <td>MR. NAIM JABRA</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>SKY LINE CONSULTING</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>SUPPLY & LAYING OF CABLES + MDB</td>
+            <td>PLOT NO. AL KHAWANEEJ DUBAI, UAE</td>
+            <td>AL RAWABI</td>
+            <td>RAWABI</td>
+            <td>RAWABI</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>FLEX RESIDENTIAL VILLA</td>
+            <td>PLOT #JVC13FRP004 JUMEIRAH VILLAGE CIRCLE DUBAI, UAE</td>
+            <td>Mr. FADI ANTONIOS</td>
+            <td>M/s AL MATEN BLDG CONT CO LLC</td>
+            <td>M/s EMIRATES CONTRACTING COMPANY LLC</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>INDUSTRIAL SHED FOR BARAKAT VEGETABLES & FRUITS CO. LLC</td>
+            <td>PLOT NO.416-5634 NAAD AL HAMAR DUBAI, UAE</td>
+            <td>BARAKAT / MR. MAHESH</td>
+            <td>M/s H&M BUILDING CONTRACTING L.L.C</td>
+            <td>M/s CHAWLA ARCHITECTURAL & CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>SUNSHINE TOWER</td>
+            <td>PLOT NO. H201307 DUBAI SILICON OASIS DUBAI, UAE</td>
+            <td>M/s SUN & SAND DEVELOPER FZCO</td>
+            <td>M/s SUN & SAND DEVELOPER FZCO + M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s CHAWLA ARCHITECTURAL & CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>JVT (B+G+4)</td>
+            <td>PLOT NO. JVT02HMRA004 JUMEIRAH VILLAGE CIRCLE DUBAI, UAE</td>
+            <td>Mr. FADI ANTONIOS</td>
+            <td>M/s GEORGIA CONTRACTING CO LLC</td>
+            <td>M/s PIONEERS OF EXPERTS ENGINEERING CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>WASTE SEGREGATION & SORTING PLANT FOR WASTE COAST WASTE COLLECTION</td>
+            <td>PLOT NO. 2673450 MUHAISNAH FIFTH DUBAI, UAE</td>
+            <td>N/A</td>
+            <td>M/s CITY MARCC CONTRACTING EST.</td>
+            <td>M/s ORBIT ENGINEERING CONSULTANT</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>LABOUR ACCOMMODATION (G+4)</td>
+            <td>PLOT NO. 599-1766 JABEL ALI DUBAI, UAE</td>
+            <td>M/s HAMPTON PROPERTY DEVELOPERS</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s CHAWLA ARCHITECTURAL & CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>JVC (G+4 BUILDING)</td>
+            <td>PLOT NO. JVC11AAMRA006 JUMEIRAH VILLAGE CIRCLE DUBAI, UAE</td>
+            <td>MR. YOUSSEF EL KURDI</td>
+            <td>M/s MAHMOUD NABOULSI & CO. CONTRACTING LLC (NCC)</td>
+            <td>M/s GOLDEN SQUARE ENGINEERING CONSULTANTS - GS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>LABOUR ACCOMMODATION BUILDING (G +3)</td>
+            <td>PLOT NO. 264-487 (B 366) AL GHUSAIS DUBAI, UAE</td>
+            <td>M/s GULF & SAFA DAIRIES CO LLC</td>
+            <td>M/s IGNIS CONTRACTING LLC</td>
+            <td>M/s ALIGN ENGINEERING CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>VILLA (BHATIA) (B+G+1)</td>
+            <td>PLOT NO. 3670572 AT UMM AL SHEIF DUBAI, UAE</td>
+            <td>Mr. ASHOK KUMAR BHATIA, Ms. MAMTA ASHOK BHATIA</td>
+            <td>M/s MZOON BUILDING CONTRACTING CO (LLC)</td>
+            <td>M/s CHAWLA ARCHITECTURAL & CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>JAZFA POST OFFICE (IGNIS)</td>
+            <td>PLOT NO. JAFZA DUBAI, UAE</td>
+            <td>EMIRATES POST OFFICE</td>
+            <td>M/s IGNIS CONTRACTING LLC</td>
+            <td>M/s OPTIONS ENGINEERING CONSULTANT</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>SUNBEAM HOMES</td>
+            <td>PLOT NO 115 DUBAI INDUSTRIAL CITY DUBAI, UAE</td>
+            <td>M/s SUN AND SAND DEVELOPER FZCO</td>
+            <td>M/s ALI AL FARSI BUILDING CONTRACTING LLC</td>
+            <td>M/s HAO ARCHITECTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>RAYMOND VILLA</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>JAFZA EID</td>
+            <td>JAFZA, DUBAI</td>
+            <td>EMIRATES IDENTITY AUTHORITY</td>
+            <td>M/s IGNIS CONTRACTING LLC</td>
+            <td>N/A</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>G+1 PRIVATE VILLA AT AL MANARA DUBAI</td>
+            <td>AL MANARA, DUBAI</td>
+            <td>MR. ABDELWAHEB ELHALABY</td>
+            <td>M/s CONSENT CONTRACTING LLC</td>
+            <td>STUDIO FIVE DESIGN AND CONTRACTING - CAIRO</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>PROPOSED CONSENT LABOUR ACCOMMODATION G+4+R AT JABEL ALI</td>
+            <td>JABEL ALI, DUBAI</td>
+            <td>MR. SAEED OBAID AHMED AL KAABI</td>
+            <td>M/s CONSENT CONTRACTING LLC</td>
+            <td>BARGEEL ENGINEERING CONSULTANT</td>
+        </tr>        
+        </tbody>
+      </table>
+    </div>
+  
+    <div class="table-container" id="table3">
+      <table>
+        <thead>
+          <tr>
+            <th>Status</th>
+            <th>Details</th>
+            <th>Location</th>
+            <th>Owner</th>
+            <th>Main Contractor</th>
+            <th>Consultant</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>COMPLETED</td>
+            <td>CITY TOWER MOSQUE AJMAN</td>
+            <td>PLOT NO NEAR SAFEER MALL AJMAN, UAE</td>
+            <td>N/A</td>
+            <td>M/s GULF ASIA CONTRACTING CO. LLC</td>
+            <td>M/s URBANISM PLANNING ARCHITECTURE CONSULTANCY LLC</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>AJMAN BANK BUILDING G+M+7 TYPICAL</td>
+            <td>PLOT NO AL MUSHRIEF AJMAN, UAE</td>
+            <td>BANK OF AJMAN</td>
+            <td>M/s GULF ASIA CONTRACTING CO. LLC</td>
+            <td>M/s PROARC ARCHITECTS & ENGINEERING CONSULTANTS</td>
+        </tr>
+        <tr>
+            <td>COMPLETED</td>
+            <td>YASMEEN TOWER (G+4P+15F RESIDENTIAL BUILDING) 945 APPARTMENTS</td>
+            <td>PLOT NO 19-2-0-470 SECTOR NO. 2, AL JURF 1 AJMAN, UAE</td>
+            <td>H.H SHEIKH HUMAID BIN RASHID AL NUAIMI</td>
+            <td>M/s GULF ASIA CONTRACTING CO. LLC</td>
+            <td>M/s NATIONAL ENGINEERING BUREAU - CONSULTANT ENGINEERS (NEB)</td>
+        </tr>        
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tabs = document.querySelectorAll('.tabs .tab');
+      const tableContainers = document.querySelectorAll('.table-container');
+  
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function () {
+          tabs.forEach(t => t.classList.remove('active'));
+          this.classList.add('active');
+  
+          const target = this.getAttribute('data-target');
+  
+          tableContainers.forEach(container => {
+            container.classList.remove('active');
+            if (container.getAttribute('id') === target) {
+              container.classList.add('active');
+            }
+          });
+        });
+      });
+    });
+  </script>
+  
   
 
   <!-- about section ends -->
@@ -325,7 +846,7 @@
               <a href="">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 <span>
-                  +01 1234567890
+                  +971509776331
                 </span>
               </a>
             </div>

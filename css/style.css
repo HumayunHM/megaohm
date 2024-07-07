@@ -539,6 +539,7 @@ a:focus {
   text-align: justify;
 }
 
+
 .service_section .heading_container {
   margin-bottom: 35px;
 }
@@ -672,6 +673,35 @@ a:focus {
 .service_section .owl-dots .owl-dot.active {
   background: #c0392b;
 }
+
+.approved_section .heading_container {
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+.approved_images .image {
+  margin: 15px 0;
+}
+
+.approved_images .approved-img-1 {
+  max-width: 100%; /* Ensure it doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.approved_images .approved-img-2 {
+  max-width: 100%; /* Ensure it doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 767px) {
+  .approved_images .approved-img-1,
+  .approved_images .approved-img-2 {
+    width: 100px; /* Adjust the width for smaller screens */
+  }
+}
+
+
+
 
 .about_section .row {
   -webkit-box-align: center;
