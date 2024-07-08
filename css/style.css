@@ -683,19 +683,19 @@ a:focus {
   margin: 15px 0;
 }
 
-.approved_images .approved-img-1 {
+.approved_images .approved-img1 {
   max-width: 100%; /* Ensure it doesn't exceed its container */
   height: auto; /* Maintain aspect ratio */
 }
 
-.approved_images .approved-img-2 {
+.approved_images .approved-img2 {
   max-width: 100%; /* Ensure it doesn't exceed its container */
   height: auto; /* Maintain aspect ratio */
 }
 
 @media (max-width: 767px) {
-  .approved_images .approved-img-1,
-  .approved_images .approved-img-2 {
+  .approved_images .approved-img1,
+  .approved_images .approved-img2 {
     width: 100px; /* Adjust the width for smaller screens */
   }
 }
