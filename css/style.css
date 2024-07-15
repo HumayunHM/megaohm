@@ -535,6 +535,13 @@ a:focus {
   margin: 0 10px;
 }
 
+@media (max-width: 768px) {
+  .logos:before,
+  .logos:after {
+    display: none;
+  }
+}
+
 .consistent-text {
   text-align: justify;
 }
